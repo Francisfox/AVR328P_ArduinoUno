@@ -1,3 +1,5 @@
+#include <avr/io.h>
+#include <avr/interrupt.h>
 
 ISR(PCINT1_vect){
   if(!(PINC & (1<<2))){           // quando receber 0 no port A3 executa o que esta dentro desta parte 
